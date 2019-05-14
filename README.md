@@ -1,6 +1,6 @@
 # Elect Immobiles
 
-Elect immobiles from link based on code challenge 
+Elect immobiles from link based on code challenge and storage the datas in memory
 
 ## Main Technologies
 - Java 8
@@ -14,42 +14,42 @@ Elect immobiles from link based on code challenge
 ## Execution
 Application execution is done through a Maven command that initiates a Spring Boot boot.
 
+#### Dependencies
+Download dependencies and install
 - mvn package
 - mvn install
+
+#### Tests
+- mvn test
+
+#### Running application
 - mvn spring-boot:run
 
-## Features
+## Utilization
 
-#### Swagger
-<a hreg="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a>
-
-#### Register new DNAs
-**api link:** <a hreg="https://dna-simios.herokuapp.com/simian">https://dna-simios.herokuapp.com/simian</a>
-
-**request example:**
+**VivaReal API:**
 ```
-POST → /simian
-{
-  "dna": ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
-}
+GET → /vivareal/{page}/{limit}
 ```
 **response:**
-<p>Case is simian: HTTP 200-OK</p>
-<p>Case is human: HTTP 403-FORBIDDEN</p>
+<p>code = 200, message = "Successfully retrieved list"</p>
+<p>code = 404, message = "Invalid parameters")</p>
+<p>code = 404, message = "Maximum limit per page is 50 records")</p>
 
 #### DNA stats
 **api link:** <a hreg="https://dna-simios.herokuapp.com/stats">https://dna-simios.herokuapp.com/stats</a>
 
-**request example:**
+**VivaReal API:**
 ```
-GET → /stats
+GET → /vivareal/{page}/{limit}
 ```
-**response example:**
-```
-{"count_mutant_dna": 50, "count_human_dna": 200: "ratio": 0.25}
-```
+**response:**
+<p>code = 200, message = "Successfully retrieved list"</p>
+<p>code = 404, message = "Invalid parameters")</p>
+<p>code = 404, message = "Maximum limit per page is 50 records")</p>
 
+#### Swagger
 
+The details endpoints are described on swagger link bellow
 
-## Obs
-How the app was deployed on Heroku, in the first access can be app is will in "sleep mode", making the first access more slow.
+<a hreg="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a>
