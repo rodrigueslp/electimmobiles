@@ -16,7 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/immobiles/")
+@RequestMapping("/v1/immobiles/")
 @Api(value = "Immobiles", description = "Getting elegible immobiles to Zap and ViviReal")
 public class ImmobileController {
 

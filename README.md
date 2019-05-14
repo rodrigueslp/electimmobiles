@@ -29,24 +29,21 @@ Download dependencies and install
 
 **VivaReal API:**
 ```
-GET → /vivareal/{page}/{limit}
+GET → /v1/immobile/vivareal/{page}/{limit}
 ```
 **response:**
 <p>code = 200, message = "Successfully retrieved list"</p>
 <p>code = 404, message = "Invalid parameters")</p>
-<p>code = 404, message = "Maximum limit per page is 50 records")</p>
+<p>code = 404, message = "Maximum limit per page is 50 records"</p>
 
-#### DNA stats
-**api link:** <a hreg="https://dna-simios.herokuapp.com/stats">https://dna-simios.herokuapp.com/stats</a>
-
-**VivaReal API:**
+**Zap API:**
 ```
-GET → /vivareal/{page}/{limit}
+GET → /v1/immobile/zap/{page}/{limit}
 ```
 **response:**
 <p>code = 200, message = "Successfully retrieved list"</p>
 <p>code = 404, message = "Invalid parameters")</p>
-<p>code = 404, message = "Maximum limit per page is 50 records")</p>
+<p>code = 404, message = "Maximum limit per page is 50 records"</p>
 
 #### Swagger
 
