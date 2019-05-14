@@ -42,7 +42,7 @@ public class ImmobileBusiness {
                 electImmobileBusiness.electToVivaReal(immobiles[i]);
                 electImmobileBusiness.electToZap(immobiles[i]);
 
-                LOGGER.info("### Immobile: " + i + " Executing immobiles validation ###");
+//                LOGGER.info("### Immobile: " + i + " Executing immobiles validation ###");
 
             }
 

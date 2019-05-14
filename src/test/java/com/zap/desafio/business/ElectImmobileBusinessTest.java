@@ -1,20 +1,23 @@
 package com.zap.desafio.business;
 
 import com.zap.desafio.ImmobileToTest;
-import com.zap.desafio.dto.*;
+import com.zap.desafio.dto.ImmobileDto;
 import com.zap.desafio.enumerator.BusinessTypeEnum;
 import com.zap.desafio.provider.ImmobileProvider;
 import com.zap.desafio.rule.vivareal.VivaRealRule;
 import com.zap.desafio.rule.zap.ZapRule;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
 
 import static org.mockito.Mockito.*;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 public class ElectImmobileBusinessTest {
 
@@ -32,7 +35,7 @@ public class ElectImmobileBusinessTest {
 
     @Before
     public void setUp() throws Exception {
-        MockitoAnnotations.initMocks(this);
+        initMocks(this);
     }
 
     @Test
@@ -128,9 +131,5 @@ public class ElectImmobileBusinessTest {
         verify(immobileProvider, never()).addImmobileZap(validImmobileDto);
 
     }
-
-
-
-
 
 }

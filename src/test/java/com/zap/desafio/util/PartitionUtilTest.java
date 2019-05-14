@@ -32,7 +32,7 @@ public class PartitionUtilTest {
     public void partition_withInvalidParameters_shouldInvokeInvalidParametersException() throws BusinessException {
 
         try {
-            PartitionUtil.partition(Mockito.anySet(), 0, 0);
+            PartitionUtil.partition(new HashSet<>(), 0, 0);
             fail("Faield test");
         } catch (InvalidParametersException e) {
             assertThat(e.getMessage(), is("Invalid parameters."));
@@ -44,7 +44,7 @@ public class PartitionUtilTest {
     public void partition_withInvalidLimitNumber_shouldInvokeMaximumLimitException() throws BusinessException {
 
         try {
-            PartitionUtil.partition(Mockito.anySet(), 1, 51);
+            PartitionUtil.partition(new HashSet<>(), 1, 51);
             fail("Faield test");
         } catch (MaximumLimitException e) {
             assertThat(e.getMessage(), is("Maximum limit per page is 50 records."));
