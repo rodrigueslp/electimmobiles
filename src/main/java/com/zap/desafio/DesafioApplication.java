@@ -16,9 +16,6 @@ import java.util.Set;
 @SpringBootApplication
 public class DesafioApplication {
 
-	@Autowired
-	private ImmobileBusiness immobileBusiness;
-
 	public static void main(String[] args) throws BusinessException {
 
 		ConfigurableApplicationContext context = SpringApplication.run(DesafioApplication.class, args);

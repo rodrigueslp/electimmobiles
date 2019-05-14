@@ -19,6 +19,6 @@ public class ImmobileOutputDto {
 
     private int totalCount;
 
-    private Set<ImmobileDto> immobiles;
+    private Set<ImmobileDto> listings;
 
 }

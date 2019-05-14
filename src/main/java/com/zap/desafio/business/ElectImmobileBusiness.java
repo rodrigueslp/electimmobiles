@@ -1,13 +1,11 @@
 package com.zap.desafio.business;
 
-import com.zap.desafio.dto.BoundingBoxDto;
 import com.zap.desafio.dto.ImmobileDto;
 import com.zap.desafio.dto.ParameterDto;
-import com.zap.desafio.enumerator.BoundingBoxEnum;
 import com.zap.desafio.enumerator.BusinessTypeEnum;
+import com.zap.desafio.provider.ImmobileProvider;
 import com.zap.desafio.rule.vivareal.VivaRealRule;
 import com.zap.desafio.rule.zap.ZapRule;
-import com.zap.desafio.provider.ImmobileProvider;
 import com.zap.desafio.util.BoundingBoxUtil;
 import com.zap.desafio.util.ValidateParameterUtil;
 import org.springframework.beans.factory.annotation.Autowired;
