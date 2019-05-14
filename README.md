@@ -29,7 +29,7 @@ Download dependencies and install
 
 **VivaReal API:**
 ```
-GET → /v1/immobile/vivareal/{page}/{limit}
+GET → /v1/immobiles/vivareal/{page}/{limit}
 ```
 **response:**
 <p>code = 200, message = "Successfully retrieved list"</p>
@@ -38,7 +38,7 @@ GET → /v1/immobile/vivareal/{page}/{limit}
 
 **Zap API:**
 ```
-GET → /v1/immobile/zap/{page}/{limit}
+GET → /v1/immobiles/zap/{page}/{limit}
 ```
 **response:**
 <p>code = 200, message = "Successfully retrieved list"</p>
